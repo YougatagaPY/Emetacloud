@@ -1,17 +1,33 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
-        {% block stylesheets %}
-        {% endblock %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Fashion | Teamplate</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="public/assets/img/favicon.ico">
 
-        {% block javascripts %}
-            {% block importmap %}{{ importmap('app') }}{% endblock %}
-        {% endblock %}
-    </head>
-    <body>
+    <!-- CSS here -->
+    <link rel="stylesheet" href="public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="public/assets/css/slicknav.css">
+    <link rel="stylesheet" href="public/assets/css/flaticon.css">
+    <link rel="stylesheet" href="public/assets/css/progressbar_barfiller.css">
+    <link rel="stylesheet" href="public/assets/css/gijgo.css">
+    <link rel="stylesheet" href="public/assets/css/animate.min.css">
+    <link rel="stylesheet" href="public/assets/css/animated-headline.css">
+    <link rel="stylesheet" href="public/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="public/assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="public/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="public/assets/css/slick.css">
+    <link rel="stylesheet" href="public/assets/css/nice-select.css">
+    <link rel="stylesheet" href="public/assets/css/style.css">
+    
+</head>
+  <body>
+        {% include 'Menu/head.html.twig' %}
+        {% include 'Menu/menu.html.twig' %}
         {% block body %}{% endblock %}
     </body>
-</html>
